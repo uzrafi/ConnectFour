@@ -1,43 +1,79 @@
 # Project Title
 
-Simple overview of use/purpose.
+Two-player ConnectFour Game
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The program functions as a two-player Connect Four game, with Red and Blue pieces being represented as 'R' and 'B' on the board, and empty spaces being represented with a '0'. The program utilizes 5 classes: Board, ConnectFour, FileReader, FileWriter, and TextUI. Board contains the altering of the board itself and handles where each piece is placed. It also contains the various win conditions and tie condition, and has a string representation of the board in a toString method as well. The ConnectFour class handles which players turn it is, and tells TextUI what to print based on updating a game state variable. The game state is changed based on if a tie or win is found on the board. The FileReader and FileWriter classes handle file reading and writing respectively, and can save a boards contents to a file, or read a board from a file. TextUI contains every print statement of the game, and prints the string representation of the board. It handles the gameplay loop and contains the main method, which allows the game to be played from scratch, or from a preexisting game that can be loaded from a file.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing and running your program.
-
+* No dependencies
 
 
 ### Executing program
 
 * How to build and run the program
-* Step-by-step bullets
+* Step-by-step bullets:
+
+1. cd to the A2 directory
 ```
-use code blocks for commands
+cd A2
 ```
-* include the expected output
+
+2. build the program
+```
+gradle build
+```
+
+3. run the program
+```
+gradle run
+```
+
+4. execute the program 
+```
+java -cp build/classes/java/main connectfour.TextUI
+```
+* expected output:
+
+```
+Welcome to Connect Four! R will move first.
+Enter 1 to start a new game, or 2 to load an existing game from a file
+
+1
+```
+
+```
+0|0|0|0|0|0|0
+-+-+-+-+-+-+-
+0|0|0|0|0|0|0
+-+-+-+-+-+-+-
+0|0|0|0|0|0|0
+-+-+-+-+-+-+-
+0|0|0|0|0|0|0
+-+-+-+-+-+-+-
+0|0|0|0|0|0|0
+-+-+-+-+-+-+-
+0|0|0|0|0|0|0
+
+Enter a column between 0 and 6, or enter 7 to save the game to a file. (Turn = R)
+```
 
 ## Limitations
 
-What isn't done? What things cause errors?  
+No functionalities of the program are incomplete or cause errors. 
 
 ## Author Information
 
-Your name and contact information including your email address
+Name: Uzair Rafi
+
+Email: urafi@uoguelph.ca
 
 ## Development History
 
-Keep a log of what things you accomplish when.  You can use git's tagging feature to tag the versions or you can reference commits.
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
