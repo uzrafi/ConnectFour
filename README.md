@@ -18,9 +18,9 @@ The program functions as a two-player Connect Four game, with Red and Blue piece
 * How to build and run the program
 * Step-by-step bullets:
 
-1. cd to the A2 directory
+1. cd to the ConnectFour directory
 ```
-cd A2
+cd ConnectFour
 ```
 
 2. build the program
